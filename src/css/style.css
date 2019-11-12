@@ -1,0 +1,14 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.log{
+    width: 350px;
+}
+.nosotros{
+    width: 10%;
+    height: 10%;
+}
+.carousel, .carousel-inner > .item > img {
+    height: 100px;
+  }
