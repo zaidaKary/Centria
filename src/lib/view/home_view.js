@@ -1,9 +1,8 @@
-export default () => {
+import {itemPersona} from '../view/itemPersona.js';
+export default (data) => {
+	console.log(data);
   const divElem = document.createElement('div');
   const viewHome =  `
-  
-
-
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-white ">
   
@@ -36,7 +35,7 @@ export default () => {
         <a id="user-icon" class="nav-link" href="#">
           <img  src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
             alt="avatar image" height="55">
-            <p class="texto" id="cuenta-user">Erika@gmail.com</p>
+            <p class="texto" id="cuenta-user">Erika Quispe</p>
 
         </a>
       </li>
@@ -172,12 +171,16 @@ export default () => {
   </div> <!-- end container -->
   </div> <!-- end contenedor-padre -->
   </div>
-</body>
-
-
-    `;
+  <div id="contenedorPersona">
+  </div>
+</body>`;
  
   divElem.innerHTML = viewHome;
+  const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
+  data.forEach((element) => {
+	  console.log(element.Nombres);
+	  contenedorPersonasCumpleaños.appendChild(itemPersona(element.Nombres));
+  })
   return divElem;
 };
 
