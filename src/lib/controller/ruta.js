@@ -1,9 +1,11 @@
 import Home from '../view/home_view.js';
 import Nosotros from '../view/nosotros_view.js';
-import {getCumpleañosPersonas} from '../model/model.js';
+import { getCumpleañosPersonas } from '../model/model.js';
+import Pilares from '../view/pilares_view.js';
 const components = {
   home: Home,
   nosotros: Nosotros,
+  pilares:Pilares,
 };
 
 export const changeView = (route) => {
@@ -12,22 +14,25 @@ export const changeView = (route) => {
   switch (route) {
     case '#/Home':
       const pintarDataCumpleaños = (objetDataCumple) => {
-        container.innerHTML='';
+        container.innerHTML = '';
         container.appendChild(components.home(objetDataCumple));
       };
       const fecha = new Date();
       const dia = fecha.getDate();
-      const mes = fecha.getMonth() +1;
+      const mes = fecha.getMonth() + 1;
       const newDia = `${dia}/${mes}`;
       // console.log(typeof newDia);
       console.log(newDia);
       console.log(mes);
-      getCumpleañosPersonas(newDia,pintarDataCumpleaños);
+      getCumpleañosPersonas(newDia, pintarDataCumpleaños);
       // getCumpleañosPersonas(pintarDataCumpleaños);
       break;
-      case '#/Nosotros':
-            container.appendChild(components.nosotros());
-          break;
+    case '#/Nosotros':
+      container.appendChild(components.nosotros());
+      break;
+    case '#/Pilares':
+      container.appendChild(components.pilares());
+      break;
     default:
       container.appendChild(components.home());
       break;

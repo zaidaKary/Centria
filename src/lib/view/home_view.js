@@ -20,6 +20,14 @@ export default (data) => {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+        <div class="wrap">
+        <div class="search">
+        <input type="text" class="searchTerm" placeholder="Search">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+       </button>
+        </div>
+        </div>
           <li  id="centria-nosotros" class="nav-item">
           <a class="nav-link active" href="http://127.0.0.1:5500/src/index.html#/Nosotros"><img  class="centria" src="../src/imgs/C azul_Mesa de trabajo 1.png"></a>
           <p class="texto">Nosotros</p>
