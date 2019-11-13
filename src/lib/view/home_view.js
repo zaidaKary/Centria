@@ -67,7 +67,7 @@ export default (data) => {
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner data-interval="2000">
     <div class="carousel-item active data-interval="2000">
-      <img src="../src/imgs/IMG_1318 (1).JPG" class="d-block w-100 h-60" alt="...">
+      <img src="../src/imgs/foto.jpg" class="d-block w-100 h-60" alt="...">
     </div>
     
     <div class="carousel-item data-interval="2000">
