@@ -552,3 +552,9 @@ table {
    width: 23px;
    margin-right: 8px;
 }
+.iconoRegalo {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
