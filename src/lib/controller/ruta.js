@@ -1,7 +1,9 @@
 import Home from '../view/home_view.js';
+import Nosotros from '../view/nosotros_view.js';
 import {getCumpleañosPersonas} from '../model/model.js';
 const components = {
   home: Home,
+  nosotros: Nosotros,
 };
 
 export const changeView = (route) => {
@@ -15,6 +17,9 @@ export const changeView = (route) => {
       };
       getCumpleañosPersonas(pintarDataCumpleaños);
       break;
+      case '#/Nosotros':
+            container.appendChild(components.nosotros());
+          break;
     default:
       container.appendChild(components.home());
       break;
