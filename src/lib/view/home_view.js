@@ -1,6 +1,10 @@
 import {itemPersona} from '../view/itemPersona.js';
 export default (data) => {
 	console.log(data);
+	var d = new Date();
+var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
+"Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(months[d.getMonth()]);
   const divElem = document.createElement('div');
   const viewHome =  `
   <header>
@@ -189,10 +193,12 @@ export default (data) => {
   </div>
   <div>
   <img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple">
-  </div>	
+  </div>
+  <div class="contenedorPersonal">
+  <label>${(months[d.getMonth()])}</label>
   <div id="contenedorPersona">
   </div>
-</body>
+
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
@@ -209,16 +215,17 @@ export default (data) => {
   <!-- Copyright -->
 
 </footer>
-
+</body>
 
     `;
     divElem.innerHTML = viewHome;
-    const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
-    data.forEach((element) => {
-      console.log(element.Nombres);
-      contenedorPersonasCumpleaños.appendChild(itemPersona(element.Nombres));
-    })
-    return divElem;
+  const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
+  data.forEach((element) => {
+	  console.log(element.Nombres);
+	  console.log(element.FechaNacimiento);
+	  contenedorPersonasCumpleaños.appendChild(itemPersona(element.Nombres,element.imagen));
+  })
+  return divElem;
   };
  
   
