@@ -2,6 +2,7 @@ import {itemPersona} from '../view/itemPersona.js';
 export default (data) => {
 	console.log(data);
 	var d = new Date();
+	const dia = d.getDate();
 var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
 "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 console.log(months[d.getMonth()]);
@@ -99,10 +100,10 @@ console.log(months[d.getMonth()]);
   </div>
   </div>
   <div>
-  <img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple">
+  <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
   </div>
   <div class="contenedorPersonal">
-  <label>${(months[d.getMonth()])}</label>
+ 
   <div id="contenedorPersona">
   </div>
 
@@ -122,16 +123,48 @@ console.log(months[d.getMonth()]);
   <!-- Copyright -->
 
 </footer>
-</body>
-
-    `;
+</body>`;
     divElem.innerHTML = viewHome;
-  const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
+//   const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
+  const idModal = divElem.querySelector('#modal');
+	const contenidoModal = document.createElement('div');
+	contenidoModal.innerHTML=  `<label>${dia} ${(months[d.getMonth()])}</label>`;
   data.forEach((element) => {
-	  console.log(element.Nombres);
-	  console.log(element.FechaNacimiento);
-	  contenedorPersonasCumpleaños.appendChild(itemPersona(element.Nombres,element.imagen));
+	//   console.log(element.Nombres);
+	//   console.log(element.FechaNacimiento);
+	contenidoModal.appendChild(itemPersona(element.Nombres,element.imagen));
   })
+
+  var modal = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Close",
+    cssClass: ['custom-class-1', 'custom-class-2'],
+    onOpen: function() {
+        console.log('modal open');
+    },
+    onClose: function() {
+        console.log('modal closed');
+    },
+    beforeClose: function() {
+        // here's goes some logic
+        // e.g. save content before closing the modal
+        return true; // close the modal
+        return false; // nothing happens
+    }
+});
+
+// set content
+modal.setContent(contenidoModal.innerHTML);
+
+// open modal
+idModal.addEventListener('click', () =>{
+	modal.open();
+});
+// close modal
+// modal.close();
+
   return divElem;
   };
  

@@ -458,3 +458,13 @@ table {
 .google-calendar{
     margin:30px;
 }
+
+.imagenCumple {
+    background: #87689B;
+    border-radius: 19px;
+    width: 5%;
+    height: 40px!important;
+    position: relative;
+    -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
+    animation: rotateAndShrink 3s linear infinite 2.5s;
+}
