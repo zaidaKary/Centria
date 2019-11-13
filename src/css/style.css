@@ -1,14 +1,51 @@
+
 *{
     padding: 0%;
     margin: 0%;
 }
+.centria{
+    width: 70px;
+    height: 60px;
+  
+}
+#centria-nosotros{
+ background:#3A6D9C;
+}
+#centria-usuarios{
+    background:#87689B;
+    display: flex;
+    flex-direction: column;
+}
+#centria-portales{
+    background: #B7C72C;
+}
+#centria-salas{
+    background:#5FACB8 ;
+}
+#centria-users{
+background: #D68500;
+}
+p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+ul{
+    margin-top: 0%;
+}
+.nav-link{
+    align-self: center;
+}
 .log{
-    width: 350px;
+    width: 25%;
+    height: 25%;
 }
-.nosotros{
-    width: 10%;
-    height: 10%;
+.padre{
+    display: flex;
+    justify-content: space-around;
 }
-.carousel, .carousel-inner > .item > img {
-    height: 100px;
-  }
+#carouselExampleControls{
+   
+   display: flex;
+  align-items: center;
+}
