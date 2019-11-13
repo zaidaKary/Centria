@@ -1,13 +1,13 @@
-import {itemPersona} from '../view/itemPersona.js';
+import { itemPersona } from '../view/itemPersona.js';
 export default (data) => {
-	console.log(data);
-	var d = new Date();
-	const dia = d.getDate();
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
-"Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(months[d.getMonth()]);
+  console.log(data);
+  var d = new Date();
+  const dia = d.getDate();
+  var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
+    "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  console.log(months[d.getMonth()]);
   const divElem = document.createElement('div');
-  const viewHome =  `
+  const viewHome = `
   <header>
   <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -22,9 +22,16 @@ console.log(months[d.getMonth()]);
         <ul class="navbar-nav ml-auto">
           <li  id="centria-nosotros" class="nav-item">
           <a class="nav-link active" href="http://127.0.0.1:5500/src/index.html#/Nosotros"><img  class="centria" src="../src/imgs/C azul_Mesa de trabajo 1.png"></a>
-          <p class="texto">Nosotros</p>
-                </a>
+          <p class="texto">Nosotros</p>  
+          <ul class="list-group list-group-horizontal">
+          <ul class="list-inline">
+          <li class="list-inline-item">Lorem ipsum</li>
+          <li class="list-inline-item">Phasellus iaculis</li>
+          <li class="list-inline-item">Nulla volutpat</li>
+        </ul>
+        </ul>      
           </li>
+
           <li id="centria-usuarios" class="nav-item">
           <a class="nav-link" href="#!"><img class="centria" src="../src/imgs/usuario.png"></a>
           <p class="texto">Gestion Humana</p>
@@ -51,6 +58,7 @@ console.log(months[d.getMonth()]);
   </section>
 </header>
 <body>
+<div class="hover"></div>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner data-interval="2000">
     <div class="carousel-item active data-interval="2000">
@@ -119,7 +127,7 @@ console.log(months[d.getMonth()]);
               <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
               </div>
               
-              <div class="iconoRegalo">
+              <div>
               <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
               </div>
             </div>
@@ -130,9 +138,9 @@ console.log(months[d.getMonth()]);
         </div> <!-- end contenedor-padre -->
 
 		<footer class="page-footer font-small blue">
-		<div  class="text-center py-3">
-		<p id="copyright">Mantente conectado</p>
-		</div>
+		
+		<p class="text-center " id="copyright">Mantente conectado</p>
+		
 		<div class="social text-senter redSocial">
 		<a href="https://www.facebook.com/groups/680173985758480/"><img src="../src/imgs/facebook.png" alt="facebook" class="facebook"></a>
 		<a href="https://www.instagram.com/c3.0centria/"><img src="../src/imgs/instragram.png" alt="instagram" class="instagram"></a>
@@ -142,16 +150,74 @@ console.log(months[d.getMonth()]);
 		</div>
 	  </footer>
 </body>`;
-    divElem.innerHTML = viewHome;
-//   const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
+
+  divElem.innerHTML = viewHome;
+  //   const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
   const idModal = divElem.querySelector('#modal');
-	const contenidoModal = document.createElement('div');
-	contenidoModal.innerHTML=  `<label>${dia} ${(months[d.getMonth()])}</label>`;
+  const contenidoModal = document.createElement('div');
+  const hover = divElem.querySelector('#centria-usuarios');
+ const centriaNosotros = divElem.querySelector('#centria-nosotros');
+ const centriaPortales = divElem.querySelector('#centria-portales');
+ const centriaSalas = divElem.querySelector('#centria-salas');
+
+
+  contenidoModal.innerHTML = `<label>${dia} ${(months[d.getMonth()])}</label>`;
   data.forEach((element) => {
-	//   console.log(element.Nombres);
-	//   console.log(element.FechaNacimiento);
-	contenidoModal.appendChild(itemPersona(element.Nombres,element.imagen));
+    //   console.log(element.Nombres);
+    //   console.log(element.FechaNacimiento);
+    contenidoModal.appendChild(itemPersona(element.Nombres, element.imagen));
   })
+
+  const templateUsuario = () =>{
+    const templateLista = divElem.querySelector('.hover');
+    templateLista.innerHTML =`<ul class="submenu">
+    <li>Portal de Desempeño</li>
+    <li>Portal de Colaboradores/li>
+    <li>Portal de Beneficios</li>
+    <li>RIT</li>
+    <li>RISST</li>
+    </ul>`  
+  
+}
+const templatePortales = () =>{
+  const templateLista = divElem.querySelector('.hover');
+  templateLista.innerHTML =`<ul class="submenu">
+  <li>Portal del Colaborador</li>
+  <li>Portal Atenea</li>
+  <li>Portal de Rendiciones</li>
+  <li>Mesa de Servicios</li>
+  <li>Portal de Seguimiento de Auditoria</li>
+  </ul>`  
+
+}
+
+hover.addEventListener('mouseover', () =>{
+  templateUsuario();
+    });
+
+  const templateNosotros = () =>{
+  const templateLista = divElem.querySelector('.hover');
+  templateLista.innerHTML =`<ul class="submenu">
+  <li>Nosotros</li>
+  <li>Competencias</li>
+  <li>Pilares</li>
+  <li>Organigrama</li>
+  </ul>`  
+}
+
+  centriaNosotros.addEventListener('mouseover', () => {
+    templateNosotros();
+  
+  }) ;
+
+
+centriaPortales.addEventListener('mouseover', () =>{
+  templatePortales();
+})
+
+  // hover.addEventListener('mouseout', () =>{
+  //   console.log('hello')
+  // } )
 
   var modal = new tingle.modal({
     footer: true,
@@ -159,29 +225,30 @@ console.log(months[d.getMonth()]);
     closeMethods: ['overlay', 'button', 'escape'],
     closeLabel: "Close",
     cssClass: ['custom-class-1', 'custom-class-2'],
-    onOpen: function() {
-        console.log('modal open');
+    onOpen: function () {
+      console.log('modal open');
     },
-    onClose: function() {
-        console.log('modal closed');
+    onClose: function () {
+      console.log('modal closed');
     },
-    beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+    beforeClose: function () {
+      // here's goes some logic
+      // e.g. save content before closing the modal
+      return true; // close the modal
+      return false; // nothing happens
     }
-});
+  });
 
-// set content
-modal.setContent(contenidoModal.innerHTML);
+  // set content
+  modal.setContent(contenidoModal.innerHTML);
 
-// open modal
-idModal.addEventListener('click', () =>{
-	modal.open();
-});
-// close modal
-// modal.close();
-
+  // open modal
+  idModal.addEventListener('click', () => {
+    modal.open();
+  });
+  // close modal
+  // modal.close();
+  
+  
   return divElem;
-  };
+};
