@@ -214,9 +214,9 @@ hover.addEventListener('mouseover', () =>{
   const templateNosotros = () =>{
   const templateLista = divElem.querySelector('.hover');
   templateLista.innerHTML =`<ul class="submenu">
-  <li><a href="http://127.0.0.1:5500/src/index.html#/Nosotros" target="_blank" class="noDecoration">Nosotros</a></li>
-  <li><a href="http://127.0.0.1:5500/src/index.html#/Competencias" target="_blank" class="noDecoration">Competencias</a></li>
-  <li><a href="http://127.0.0.1:5500/src/index.html#/Pilares" target="_blank" class="noDecoration">Pilares</a></li>
+  <li><a href="http://127.0.0.1:5500/src/index.html#/Nosotros" class="noDecoration">Nosotros</a></li>
+  <li><a href="http://127.0.0.1:5500/src/index.html#/Competencias" class="noDecoration">Competencias</a></li>
+  <li><a href="http://127.0.0.1:5500/src/index.html#/Pilares" class="noDecoration">Pilares</a></li>
   <li><a href="./Organigrama (11.11.19).pdf" target="_blank" target="_blank" class="noDecoration">Organigrama</a></li>
   </ul>`  
 }
