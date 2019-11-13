@@ -163,11 +163,8 @@ table {
 }
 
 #hijo-contenedor{
-    height: 450px;
-    left: 50%;
-
-    width: 510px;
-}
+    display: flex;
+} 
 
 /* ---------- CALENDAR ---------- */
 
@@ -283,8 +280,8 @@ table {
 .beneficios-div {
     display: flex;
     margin: 20px;
-    margin-top: 10px;
-    margin-left: 26%;
+
+  
     cursor: pointer;
 }
 
@@ -467,4 +464,22 @@ table {
     position: relative;
     -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
     animation: rotateAndShrink 3s linear infinite 2.5s;
+}
+.div-acceso-directo{
+   width: 100%;
+    display: flex;
+    
+    
+}
+.div-acceso-directo p {
+    color: white;
+    font-weight: 500;
+}
+.cuadrado-ad{
+ width: 200%;
+ height: 20%;
+ background: #D68500;
+ margin: 10px;
+ align-self: center;
+
 }

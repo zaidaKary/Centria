@@ -73,56 +73,77 @@ console.log(months[d.getMonth()]);
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <div class="contenedor-padre">
+    <div>
+        <div class="card" style="width: 25rem;">
+            <img src="../src/imgs/noticia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Hoy iniciamos nuestra participación en la Hackathon de treinta y seis horas ininterrumpidas como parte del #TalentFest2019 organizado por Laboratoria, en donde resolveremos el reto de negocio planteado de la mano de las egresadas de Laboratoria.</p>
+            </div>
+           
+          </div>
+    </div>
 
-<div class="card" style="width: 25rem;">
-  <img src="../src/imgs/noticia.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Hoy iniciamos nuestra participación en la Hackathon de treinta y seis horas ininterrumpidas como parte del #TalentFest2019 organizado por Laboratoria, en donde resolveremos el reto de negocio planteado de la mano de las egresadas de Laboratoria.</p>
-  </div>
- 
-</div>
-<div id="hijo-contenedor"class="google-calendar">
-<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLima&amp;src=Zm5ycmJyMnBqODg1OGtwN3RkazJrdm1ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23336699&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
-</div>
-  </div> <!-- end contenedor-padre -->
-  
-  </div>
-  <div class="beneficios-div">
-  <div>
-   <img id="beneficios" class="img-beneficios"src="../src/imgs/Botón-Beneficios.jpg" >
-  </div>
-  <div>
-  <img id="integridad"class="img-beneficios" src="../src/imgs/Botón-Canal-de-Integridad.jpg" >
-  </div>
-  <div>
-  <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
-  </div>
-  </div>
-  <div>
-  <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
-  </div>
-  <div class="contenedorPersonal">
- 
-  <div id="contenedorPersona">
-  </div>
 
-<footer class="page-footer font-small blue">
 
-  <!-- Copyright -->
-  <div  class="text-center py-3">
-  <p id="copyright">Mantente conectado</p>
-  </div>
-  <div class="social text-senter">
-  
-</div>
-  <div class="footer-copyright text-center py-3"><strong>©2019 CENTRIA - TODOS LOS DERECHOS RESERVADOS </strong>
- 
- 
-  </div>
-  <!-- Copyright -->
+    <div>
+      <div id="hijo-contenedor">
+        <div class="google-calendar">
+          <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLima&amp;src=Zm5ycmJyMnBqODg1OGtwN3RkazJrdm1ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23336699&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="div-acceso-directo">
+      
+              <div class="cuadrado-ad">
+                <p>Portal de Rendiciones</p>
+                </div>
+                <div class="cuadrado-ad">
+                  <p>Formatos</p>
+                </div>
+                <div class="cuadrado-ad">
+                <p>Rist</p>
+                </div>
+                </div>
+                
+        </div>
+      <div>
+          <div class="beneficios-div">
+              <div>
+               <img id="beneficios" class="img-beneficios"src="../src/imgs/Botón-Beneficios.jpg" >
+              </div>
+              <div>
+              <img id="integridad"class="img-beneficios" src="../src/imgs/Botón-Canal-de-Integridad.jpg" >
+              </div>
+              <div>
+              <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
+              </div>
+              
+              <div>
+              <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
+              </div>
+            </div>
+      </div>
+      
+    </div>
 
-</footer>
+        </div> <!-- end contenedor-padre -->
+
+      <footer class="page-footer font-small blue">
+      
+        <!-- Copyright -->
+        <div  class="text-center py-3">
+        <p id="copyright">Mantente conectado</p>
+        </div>
+        <div class="social text-senter">
+        
+      </div>
+        <div class="footer-copyright text-center py-3"><strong>©2019 CENTRIA - TODOS LOS DERECHOS RESERVADOS </strong>
+       
+       
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
 </body>`;
     divElem.innerHTML = viewHome;
 //   const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
