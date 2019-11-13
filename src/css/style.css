@@ -318,7 +318,8 @@ table {
 
 .imagen-personal {
     width: 6em;
-    border-radius: 4em;
+    padding-top: 0.5em;
+    padding-right: 1em;
 
 }
 
@@ -428,23 +429,34 @@ table {
 .div-acceso-directo{
    width: 100%;
     display: flex;
-    
-    
+    flex-direction: column;
+    justify-content: center;
 }
 .div-acceso-directo p {
     color: #3a6d9c;
     font-weight: 500;
   
 }
-
 .cuadrado-ad{
   
  align-self: center;
  text-align: center;
-
 }
 .cuadrado-ad img {
-    width: 50%;
+    width: 70%;
+}
+.mes{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 1em;
+    font-weight: 800;
+    color:rgb(224, 80, 24);
+}
+.contenedorProducto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media (max-width: 900px) {
     #centria-nosotros {
@@ -583,4 +595,14 @@ table {
 .submenu {
     display: flex;
     justify-content: space-around;
+}
+.estiloAccesoDirecto {
+    display: flex;
+}
+.txtAcceso {
+    color: #3a6d9c;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 31px;
 }
