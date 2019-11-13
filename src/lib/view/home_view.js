@@ -1,6 +1,10 @@
 import {itemPersona} from '../view/itemPersona.js';
 export default (data) => {
 	console.log(data);
+	var d = new Date();
+var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
+"Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(months[d.getMonth()]);
   const divElem = document.createElement('div');
   const viewHome =  `
   <header>
@@ -171,7 +175,10 @@ export default (data) => {
   </div> <!-- end container -->
   </div> <!-- end contenedor-padre -->
   </div>
+  <div class="contenedorPersonal">
+  <label>${(months[d.getMonth()])}</label>
   <div id="contenedorPersona">
+  </div>
   </div>
 </body>`;
  
@@ -179,7 +186,8 @@ export default (data) => {
   const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
   data.forEach((element) => {
 	  console.log(element.Nombres);
-	  contenedorPersonasCumpleaños.appendChild(itemPersona(element.Nombres));
+	  console.log(element.FechaNacimiento);
+	  contenedorPersonasCumpleaños.appendChild(itemPersona(element.Nombres,element.imagen));
   })
   return divElem;
 };

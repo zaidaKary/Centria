@@ -13,7 +13,15 @@ export const changeView = (route) => {
         container.innerHTML='';
         container.appendChild(components.home(objetDataCumple));
       };
-      getCumpleañosPersonas(pintarDataCumpleaños);
+      const fecha = new Date();
+      const dia = fecha.getDate();
+      const mes = fecha.getMonth() +1;
+      const newDia = `${dia}/${mes}`;
+      // console.log(typeof newDia);
+      console.log(newDia);
+      console.log(mes);
+      getCumpleañosPersonas(newDia,pintarDataCumpleaños);
+      // getCumpleañosPersonas(pintarDataCumpleaños);
       break;
     default:
       container.appendChild(components.home());
