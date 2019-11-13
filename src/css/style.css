@@ -426,23 +426,21 @@ table {
 .div-acceso-directo{
    width: 100%;
     display: flex;
-    
-    
+    flex-direction: column;
+    justify-content: center;
 }
 .div-acceso-directo p {
     color: #3a6d9c;
     font-weight: 500;
   
 }
-
 .cuadrado-ad{
   
  align-self: center;
  text-align: center;
-
 }
 .cuadrado-ad img {
-    width: 50%;
+    width: 70%;
 }
 @media (max-width: 900px) {
     #centria-nosotros {
@@ -558,3 +556,48 @@ table {
     right: 0;
     bottom: 0;
 }
+.estiloAccesoDirecto {
+    display: flex;
+}
+.txtAcceso {
+    color: #3a6d9c;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 31px;
+}
+.menu ul {
+    background: rgba(10, 10, 10, 1);
+    display:flex;
+    list-style: none;
+    height: 62px;
+    float: right;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .menu ul ul {
+    display: none;
+  }
+  .menu a {
+    display: block;
+    padding: 19px 33px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .menu a:hover {
+    background: rgba(80, 78, 78, 0.836);
+    top: 0%;
+    color: #FFFFFF;
+    text-decoration: none;
+  
+  }
+  .menu ul li:hover .uno {
+    display: block;
+    position: absolute;
+    width: 195px;
+    height: 245px;
+    background: rgba(248, 96, 8, 1);
+  }

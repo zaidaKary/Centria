@@ -24,19 +24,23 @@ console.log(months[d.getMonth()]);
           <a class="nav-link active" href="http://127.0.0.1:5500/src/index.html#/Nosotros"><img  class="centria" src="../src/imgs/C azul_Mesa de trabajo 1.png"></a>
           <p class="texto">Nosotros</p>
                 </a>
-          </li>
+		  </li>
+		  
           <li id="centria-usuarios" class="nav-item">
           <a class="nav-link" href="#!"><img class="centria" src="../src/imgs/usuario.png"></a>
           <p class="texto">Gestion Humana</p>
-          </li>
+		  </li>
+		  
           <li id="centria-portales" class="nav-item">
           <a class="nav-link" href="#!"><img class="centria" src="../src/imgs/laptop (2).png"></a>
           <p class="texto">Portales</p>
-          </li>
+		  </li>
+		  
           <li id="centria-salas"class="nav-item">
           <a class="nav-link" href="#!"><img class="centria" src="../src/imgs/sala.png"></a>
           <p class="texto">Salas</p>
-          </li>
+		  </li>
+		  
           <li id="centria-users" class="nav-item">
           <a  class="nav-link" href="#">
           <img  src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="centria rounded-circle z-depth-0"
@@ -83,51 +87,61 @@ console.log(months[d.getMonth()]);
             </div>
            
           </div>
-    </div>
-    <div>
-      <div id="hijo-contenedor">
+	</div>
+	
+	<div>
+    <div id="hijo-contenedor">
+        <!-- calendario -->
         <div class="google-calendar">
-          <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLima&amp;src=Zm5ycmJyMnBqODg1OGtwN3RkazJrdm1ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23336699&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
-          </div>
-          <div class="div-acceso-directo">
-          
-              <div class="cuadrado-ad">
-              <img src="../src/imgs/puzzle-piece-plugin.svg">
-                <p>Portal de Rendiciones</p>
-                </div>
-                <div class="cuadrado-ad">
-                <img src="../src/imgs/puzzle-piece-plugin.svg">
-                  <p>Formatos</p>
-                </div>
-  
-                <div class="cuadrado-ad">
-                <img src="../src/imgs/puzzle-piece-plugin.svg">
-                <p>Rist</p>
-                </div>
-                </div>
-                
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLima&amp;src=Zm5ycmJyMnBqODg1OGtwN3RkazJrdm1ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23336699&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
-      <div>
-          <div class="beneficios-div">
-              <div>
-               <img id="beneficios" class="img-beneficios"src="../src/imgs/Botón-Beneficios.jpg" >
-              </div>
-              <div>
-              <img id="integridad"class="img-beneficios" src="../src/imgs/Botón-Canal-de-Integridad.jpg" >
-              </div>
-              <div>
-              <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
-              </div>
-              
-              <div class="iconoRegalo">
-              <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
-              </div>
+        <!-- accesos directos -->
+        <div class="div-acceso-directo">
+            <div class="txtAcceso">
+                <label>Accesos directos</label>
             </div>
-      </div>
-      
+            <div class="estiloAccesoDirecto">
+            <div class="cuadrado-ad">
+              <img src="../src/imgs/puzzle-piece-plugin.svg">
+              <p>Portal de Rendiciones</p>
+            </div>
+              
+            <div class="cuadrado-ad">
+              <img src="../src/imgs/puzzle-piece-plugin.svg">
+              <p>Formatos</p>
+            </div>
+
+            <div class="cuadrado-ad">
+              <img src="../src/imgs/puzzle-piece-plugin.svg">
+              <p>Rist</p>
+            </div>
+        </div>
+        </div>
+        <!-- fin de accesos directos -->    
     </div>
 
-        </div> <!-- end contenedor-padre -->
+    <div>
+        <div class="beneficios-div">
+            <div>
+             <img id="beneficios" class="img-beneficios"src="../src/imgs/Botón-Beneficios.jpg" >
+            </div>
+
+            <div>
+            <img id="integridad"class="img-beneficios" src="../src/imgs/Botón-Canal-de-Integridad.jpg" >
+            </div>
+
+            <div>
+            <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
+            </div>
+            
+            <div class="iconoRegalo">
+            <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
+            </div>
+
+        </div>
+    </div>
+</div> <!-- end contenedor-padre -->
+</div>
 
 		<footer class="page-footer font-small blue">
 		<div  class="text-center py-3">
