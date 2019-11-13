@@ -153,7 +153,7 @@ console.log(months[d.getMonth()]);
 //   const contenedorPersonasCumpleaños = divElem.querySelector('#contenedorPersona');
   const idModal = divElem.querySelector('#modal');
 	const contenidoModal = document.createElement('div');
-	contenidoModal.innerHTML=  `<label>${dia} ${(months[d.getMonth()])}</label>`;
+	contenidoModal.innerHTML=  `<label class="mes">${dia} ${(months[d.getMonth()])}</label>`;
   data.forEach((element) => {
 	//   console.log(element.Nombres);
 	//   console.log(element.FechaNacimiento);
