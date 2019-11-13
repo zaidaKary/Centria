@@ -286,6 +286,20 @@ ul{
     #copyright{
         color: black;
     }
+
+    /* -----imagen */
+    .contenedorPersonal{
+        display: flex;
+        width: 20%;
+        flex-direction: row;
+        align-content: center;
+    }
+  .imagen-personal{
+        width: 6em;
+        border-radius: 4em;
+
+  }
+    /*--------*/
     .quienesSomos {
         display: flex;
         justify-content: space-around;
