@@ -134,10 +134,6 @@ export default (data) => {
             <div>
             <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
             </div>
-            
-            <div class="iconoRegalo">
-            <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
-            </div>
 
         </div>
     </div>
@@ -155,7 +151,10 @@ export default (data) => {
 	  </div>
 		<div class="footer-copyright text-center py-3"><strong>©2019 CENTRIA - TODOS LOS DERECHOS RESERVADOS </strong>
 		</div>
-	  </footer>
+    </footer>
+    <div class="iconoRegalo">
+    <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
+    </div>
 </body>`;
 
   divElem.innerHTML = viewHome;
@@ -177,23 +176,23 @@ export default (data) => {
 
   const templateUsuario = () =>{
     const templateLista = divElem.querySelector('.hover');
-    templateLista.innerHTML =`<ul class="submenu">
-    <li>Portal de Desempeño</li>
-    <li>Portal de Colaboradores/li>
-    <li>Portal de Beneficios</li>
-    <li>RIT</li>
-    <li>RISST</li>
+    templateLista.innerHTML =`<ul class="submenu Nosotros">
+    <li><a href="" class="noDecoration">Portal de Desempeño</a></li>
+    <li><a href="" class="noDecoration">Portal de Colaboradores</a></li>
+    <li><a href="" class="noDecoration">Portal de Beneficios</a></li>
+    <li><a href="" class="noDecoration">RIT</a></li>
+    <li><a href="" class="noDecoration">RISST</a></li>
     </ul>`  
   
 }
 const templatePortales = () =>{
   const templateLista = divElem.querySelector('.hover');
   templateLista.innerHTML =`<ul class="submenu">
-  <li>Portal del Colaborador</li>
-  <li>Portal Atenea</li>
-  <li>Portal de Rendiciones</li>
-  <li>Mesa de Servicios</li>
-  <li>Portal de Seguimiento de Auditoria</li>
+  <li><a href="">Portal del Colaborador</a></li>
+  <li><a href="">Portal Atenea</a></li>
+  <li><a href="">Portal de Rendiciones</a></li>
+  <li><a href="">Mesa de Servicios</a></li>
+  <li><a href="">Portal de Seguimiento de Auditoria</a></li>
   </ul>`  
 
 }
@@ -201,14 +200,17 @@ const templatePortales = () =>{
 hover.addEventListener('mouseover', () =>{
   templateUsuario();
     });
+    // hover.addEventListener('mouseout', () => {
+    //   document.querySelector('.hover').innerHTML = '';
+    // }) ;
 
   const templateNosotros = () =>{
   const templateLista = divElem.querySelector('.hover');
   templateLista.innerHTML =`<ul class="submenu">
-  <li>Nosotros</li>
-  <li>Competencias</li>
-  <li>Pilares</li>
-  <li>Organigrama</li>
+  <li><a href="">Nosotros</a></li>
+  <li><a href="">Competencias</a></li>
+  <li><a href="">Pilares</a></li>
+  <li><a href="">Organigrama</a></li>
   </ul>`  
 }
 
@@ -216,12 +218,20 @@ hover.addEventListener('mouseover', () =>{
     templateNosotros();
   
   }) ;
+  // centriaNosotros.addEventListener('mouseout', () => {
+  //   document.querySelector('.hover').innerHTML = '';
+  
+  // }) ;
 
 
 centriaPortales.addEventListener('mouseover', () =>{
   templatePortales();
 })
 
+// centriaPortales.addEventListener('mouseout', () => {
+//   document.querySelector('.hover').innerHTML = '';
+
+// }) ;
   // hover.addEventListener('mouseout', () =>{
   //   console.log('hello')
   // } )

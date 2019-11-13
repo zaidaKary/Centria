@@ -120,7 +120,7 @@ li.nav-item:hover img.centria {
 }
 
 .card {
-    margin-top: 30px;
+    margin-top: 32px;
     margin-left: 40px;
     height: 10px;
 }
@@ -133,6 +133,8 @@ li.nav-item:hover img.centria {
 
 .card-text {
     color: black;
+    padding-top: 30px;
+    font-size: 21px;
 }
 
 body {
@@ -336,15 +338,15 @@ table {
     margin: 10px;
 }
 
-.imagenCumple {
+/* .imagenCumple {
     width: 5%;
     height: 40px !important;
   
     -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
     animation: rotateAndShrink 3s linear infinite 2.5s;
     position:fixed
-}
-
+} */
+/* 
 @-webkit-keyframes rotateAndShrink {
     0% {
         width: 40px
@@ -371,7 +373,7 @@ table {
         transform: translateY(0);
         width: 40px
     }
-}
+} */
 
 /* REDISEÑANDO LOGO */
 .navbar-brand img {
@@ -417,10 +419,8 @@ table {
 }
 
 .imagenCumple {
-    background: #87689B;
-    border-radius: 19px;
-    width: 5%;
-    height: 40px!important;
+    width: 26%;
+    height: 66px!important;
     position: relative;
     -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
     animation: rotateAndShrink 3s linear infinite 2.5s;
@@ -499,7 +499,7 @@ table {
     margin:30px;
 }
 }
-.imagenCumple {
+/* .imagenCumple {
     background: #87689B;
     border-radius: 19px;
     width: 5%;
@@ -507,7 +507,7 @@ table {
     position: relative;
     -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
     animation: rotateAndShrink 3s linear infinite 2.5s;
-}
+} */
 .facebook {
     width: 2em;
 }
@@ -555,7 +555,7 @@ table {
 .iconoRegalo {
     display: inline-block;
     position: fixed;
-    right: 0;
+    right: -181px;
     bottom: 0;
 }
  .list-group {
@@ -565,7 +565,7 @@ table {
      display: inline;
  }
 .facebook{
-    width: 50px;
+    width: 41px;
 }
 .instagram{
     width: 30px;
@@ -581,6 +581,7 @@ table {
 .submenu {
     display: flex;
     justify-content: space-around;
+    list-style: none;
 }
 .estiloAccesoDirecto {
     display: flex;
@@ -591,4 +592,10 @@ table {
     font-size: 24px;
     text-align: center;
     padding-bottom: 31px;
+}
+.Nosotros {
+    background-repeat: #3A6D9C;
+}
+.noDecoration {
+    text-decoration: none;
 }
