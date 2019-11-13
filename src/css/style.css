@@ -30,6 +30,8 @@
 }
 #centria-users{
 background: #D68500;
+display: flex;
+    flex-direction: column;
 }
 p {
     text-align: center;
@@ -65,8 +67,8 @@ ul{
     text-align-last: center;
     
 }
-#cuenta-user{
-    margin-top: 20px;}
+/* #cuenta-user{
+    margin-top: 20px;} */
 
 
     .centria{

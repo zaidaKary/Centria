@@ -37,7 +37,7 @@ export default (data) => {
           <img  src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="centria rounded-circle z-depth-0"
             alt="avatar image" height="55">
             </a>
-            <p class="texto" id="cuenta-user">Erika@gmail.com</p>
+            <p class="texto" >Erika@gmail.com</p>
           </li>
           
         </ul>
