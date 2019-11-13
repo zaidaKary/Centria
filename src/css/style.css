@@ -3,6 +3,7 @@
     margin: 0%;
 }
 
+
 #centria-nosotros {
     background: #3A6D9C;
     display: flex;
@@ -135,7 +136,7 @@ li.nav-item:hover img.centria {
 }
 
 body {
-    background: #f9f9f9;
+    background: #ffff;
     color: #0e171c;
     font: 300 100%/1.5em 'Lato', sans-serif;
     margin: 0;
@@ -163,11 +164,8 @@ table {
 }
 
 #hijo-contenedor{
-    height: 450px;
-    left: 50%;
-
-    width: 510px;
-}
+    display: flex;
+} 
 
 /* ---------- CALENDAR ---------- */
 
@@ -283,8 +281,6 @@ table {
 .beneficios-div {
     display: flex;
     margin: 20px;
-    margin-top: 10px;
-    margin-left: 26%;
     cursor: pointer;
 }
 
@@ -294,6 +290,7 @@ table {
 
 #beneficios:hover {
     box-shadow: 10px 10px 10px #B7C72C;
+    border-radius: 5px;
 }
 
 #integridad:hover {
@@ -340,9 +337,10 @@ table {
 .imagenCumple {
     width: 5%;
     height: 40px !important;
-    position: relative;
+  
     -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
     animation: rotateAndShrink 3s linear infinite 2.5s;
+    position:fixed
 }
 
 @-webkit-keyframes rotateAndShrink {
@@ -411,6 +409,40 @@ table {
     outline: none !important;
 }
 
+
+.google-calendar{
+    margin:30px;
+}
+
+.imagenCumple {
+    background: #87689B;
+    border-radius: 19px;
+    width: 5%;
+    height: 40px!important;
+    position: relative;
+    -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
+    animation: rotateAndShrink 3s linear infinite 2.5s;
+}
+.div-acceso-directo{
+   width: 100%;
+    display: flex;
+    
+    
+}
+.div-acceso-directo p {
+    color: black;
+    font-weight: 500;
+}
+
+.cuadrado-ad{
+  
+ margin: 10px;
+ align-self: center;
+
+}
+.cuadrado-ad img {
+    width: 70%;
+}
 @media (max-width: 900px) {
     #centria-nosotros {
         width: 100%;
@@ -455,10 +487,17 @@ table {
         width: 100%;
     }
 }
-.google-calendar{
+
+@media (max-width: 900px) {
+ .contenedor-padre{
+     display: flex;
+     justify-content: flex-start;
+    flex-direction: column;
+ }
+ .google-calendar{
     margin:30px;
 }
-
+}
 .imagenCumple {
     background: #87689B;
     border-radius: 19px;
