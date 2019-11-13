@@ -45,8 +45,8 @@ ul{
 }
 .log{
     width: 25%;
-    height: 25%;
-    margin-left: 30px;
+    height: 30%;
+    margin-left: 50px;
 }
 .padre{
     display: flex;
@@ -56,6 +56,10 @@ ul{
    
    display: flex;
   align-items: center;
+}
+.carousel-inner{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 #user-icon{
     text-align-last: center;
@@ -151,6 +155,10 @@ ul{
     
     .calendar {
         text-align: center;
+        color: #3A6D9C;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        
     }
     
     .calendar header {
@@ -171,7 +179,7 @@ ul{
     }
     
     .calendar tbody td:hover {
-        border: 2px solid #00addf;
+        border: 2px solid #3A6D9C;
     }
     
     .calendar td {
@@ -195,7 +203,7 @@ ul{
     }
     
     .current-day {
-        background: #00addf;
+        background: #3A6D9C;
         color: #f9f9f9;
     }
     
@@ -205,7 +213,7 @@ ul{
     }
     
     .event:after {
-        background: #00addf;
+        background: #3A6D9C;
         border-radius: 50%;
         bottom: .5em;
         display: block;
@@ -223,7 +231,7 @@ ul{
     
     .btn-prev,
     .btn-next {
-        border: 2px solid #00addf;
+        border: 2px solid #3A6D9C;
         border-radius: 50%;
         color: #cbd1d2;
         height: 2em;
@@ -250,15 +258,99 @@ ul{
     }
     .contenedor-padre{
         display: flex;
+      
+    }
+    .beneficios-div{
+        display:flex ;
+        margin:  20px;
+        margin-top: 60px;
+       margin-left: 26%;
+       cursor: pointer;
+    }
+    .img-beneficios{
+        margin: 10px;
+    }
+    #beneficios:hover{
+        box-shadow:10px 10px 10px  #B7C72C;
+    }
+    #integridad:hover{
+        box-shadow: 10px 10px 10px  #3a6d9c;
+    }
+     #oportunidades:hover{
+        box-shadow: 10px 10px 10px  #87689B;
+     }
      
+     
+    #copyright{
+        color: black;
     }
     
+    /* REDISEÑANDO LOGO */
+    .navbar-brand img{
+        height: 4rem;
+        padding-left: 3rem;
+      }
+      .navbar-nav{
+        margin-right: 3rem;
+      }
+      .navbar-nav li{
+        padding: 0 1rem;
+      }
+      .navbar-nav li {
+        padding: 0 1rem;
+      }
+      .navbar-nav .nav-item .nav-link{
+        color: #3a6d9c !important; 
+        font-weight: 600; 
+        float: right; 
+        text-align: left;}
+      .navbar-nav .nav-item .nav-link:hover{
+        color: #3a6d9c!important;
+      }
+      .fa-bars{
+        color: #3a6d9c !important; 
+        font-size: 25px !important;
+      }
+      .navbar-toggler{
+        outline: none !important;
+      }
+      
+      @media (max-width: 900px ) {
+        #centria-nosotros {
+           width: 100%;
+        }
+        #centria-usuarios{
+            width: 100%;
+        }
+        #centria-portales{
+            width: 100%;
+        }
+        #centria-salas{
+            width: 100%;
+        }
+        #centria-users{
+            width: 100%;
+        }
+    }
+    @media (min-width: 900px ) {
+        #centria-nosotros {
+           width: 100%;
+        }
+        #centria-usuarios{
+            width: 100%;
+        }
+        #centria-portales{
+            width: 100%;
+        }
+        #centria-salas{
+            width: 100%;
+        }
+        #centria-users{
+            width: 100%;
+        }
+    }
     
-    
-    
-    
-    
-    
+  
     
     
     
