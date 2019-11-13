@@ -1,99 +1,111 @@
-
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-#centria-nosotros{
- background:#3A6D9C;
- display: flex;
- flex-direction: column;
- width: 140px;
+#centria-nosotros {
+    background: #3A6D9C;
+    display: flex;
+    flex-direction: column;
+    width: 140px;
 }
-#centria-usuarios{
-    background:#87689B;
+
+#centria-usuarios {
+    background: #87689B;
     display: flex;
     flex-direction: column;
     width: 150px;
 }
-#centria-portales{
+
+#centria-portales {
     background: #B7C72C;
     display: flex;
     flex-direction: column;
     width: 150px;
 }
-#centria-salas{
+
+#centria-salas {
     display: flex;
     flex-direction: column;
-    background:#5FACB8 ;
+    background: #5FACB8;
     width: 150px;
 }
-#centria-users{
-background: #D68500;
-display: flex;
+
+#centria-users {
+    background: #D68500;
+    display: flex;
     flex-direction: column;
 }
+
 p {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-ul{
+
+ul {
     margin-top: 0%;
 }
-.nav-link{
+
+.nav-link {
     align-self: center;
     margin-top: 10px;
 }
-.log{
+
+.log {
     width: 25%;
     height: 30%;
     margin-left: 50px;
 }
-.padre{
+
+.padre {
     display: flex;
     justify-content: space-around;
 }
-#carouselExampleControls{
-   
-   display: flex;
-  align-items: center;
+
+#carouselExampleControls {
+
+    display: flex;
+    align-items: center;
 }
-.carousel-inner{
+
+.carousel-inner {
     margin-left: 50px;
     margin-right: 50px;
 }
-#user-icon{
+
+#user-icon {
     text-align-last: center;
-    
+
 }
+
 /* #cuenta-user{
     margin-top: 20px;} */
 
 
-    .centria{
-        display: block;
-    
-        background-color: rgba(255,255,255,.15);
-        width: 70px;
-        height: 60px;
-      
-        padding:10px;
-        -webkit-border-radius: 50%;
-        -webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
-        -webkit-transition:box-shadow .4s;
-    }
-    
-    p.texto{
-        font-size: 1.2em;
-        color:white;
-        text-align: center;
-        /* padding-top:10px;
+.centria {
+    display: block;
+
+    background-color: rgba(255, 255, 255, .15);
+    width: 70px;
+    height: 60px;
+
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+    -webkit-transition: box-shadow .4s;
+}
+
+p.texto {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    /* padding-top:10px;
         opacity: .6;
         -webkit-transition: padding-top .4s; */
-    }
-    
-    /* li.nav-item:hover{
+}
+
+/* li.nav-item:hover{
         height:250px;
     }
     
@@ -101,355 +113,348 @@ ul{
         padding-top: 30px;
         opacity: 1;
     } */
-    
-    li.nav-item:hover img.centria{
-        -webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
-    }
-    .card{
-        margin-top: 30px;
-        margin-left: 40px;
-        height: 10px;
-    }
-    .noticias{
-       
-        width: 80px;
-        
-    }
-    .card-text{
-        color: black;
-    }
-    body {
-        background: #f9f9f9;
-        color: #0e171c;
-        font: 300 100%/1.5em 'Lato', sans-serif;
-        margin: 0;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    h2 {
-        font-size: 2em;
-        line-height: 1.25em;
-        margin: .25em 0;
-    }
-    
-    h3 {
-        font-size: 1.5em;
-        line-height: 1em;
-        margin: .33em 0;
-    }
-    
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    
-    .container {
-        height: 450px;
-        left: 50%;
 
-        width: 510px;
-    }
-    
-    /* ---------- CALENDAR ---------- */
-    
-    .calendar {
-        text-align: center;
-        color: #3A6D9C;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        
-    }
-    
-    .calendar header {
-        position: relative;
-    }
-    
-    .calendar h2 {
-        text-transform: uppercase;
-    }
-    
-    .calendar thead {
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    
-    .calendar tbody {
-        color: #7c8a95;
-    }
-    
-    .calendar tbody td:hover {
-        border: 2px solid #3A6D9C;
-    }
-    
-    .calendar td {
-        border: 2px solid transparent;
-        border-radius: 50%;
-        display: inline-block;
-        height: 4em;
-        line-height: 4em;
-        text-align: center;
-        width: 4em;
-    }
-    
-    .calendar .prev-month,
-    .calendar .next-month {
-        color: #cbd1d2;
-    }
-    
-    .calendar .prev-month:hover,
-    .calendar .next-month:hover {
-        border: 2px solid #cbd1d2;
-    }
-    
-    .current-day {
-        background: #3A6D9C;
-        color: #f9f9f9;
-    }
-    
-    .event {
-        cursor: pointer;
-        position: relative;
-    }
-    
-    .event:after {
-        background: #3A6D9C;
-        border-radius: 50%;
-        bottom: .5em;
-        display: block;
-        content: '';
-        height: .5em;
-        left: 50%;
-        margin: -.25em 0 0 -.25em;
-        position: absolute;
-        width: .5em;
-    }
-    
-    .event.current-day:after {
-        background: #f9f9f9;
-    }
-    
-    .btn-prev,
-    .btn-next {
-        border: 2px solid #3A6D9C;
-        border-radius: 50%;
-        color: #cbd1d2;
-        height: 2em;
-        font-size: .75em;
-        line-height: 2em;
-        margin: -1em;
-        position: absolute;
-        top: 50%;
-        width: 2em;
-    }
-    
-    .btn-prev:hover,
-    .btn-next:hover {
-        background: #cbd1d2;
-        color: #f9f9f9;
-    }
-    
-    .btn-prev {
-        left: 6em;
-    }
-    
-    .btn-next {
-        right: 6em;
-    }
-    .contenedor-padre{
-        display: flex;
-      
-    }
-    .beneficios-div{
-        display:flex ;
-        margin:  20px;
-        margin-top: 60px;
-       margin-left: 26%;
-       cursor: pointer;
-    }
-    .img-beneficios{
-        margin: 10px;
-    }
-    #beneficios:hover{
-        box-shadow:10px 10px 10px  #B7C72C;
-    }
-    #integridad:hover{
-        box-shadow: 10px 10px 10px  #3a6d9c;
-    }
-     #oportunidades:hover{
-        box-shadow: 10px 10px 10px  #87689B;
-     }
-     
-     
-    #copyright{
-        color: black;
+li.nav-item:hover img.centria {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .6);
+}
+
+.card {
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 10px;
+}
+
+.noticias {
+
+    width: 80px;
+
+}
+
+.card-text {
+    color: black;
+}
+
+body {
+    background: #f9f9f9;
+    color: #0e171c;
+    font: 300 100%/1.5em 'Lato', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+    margin: .25em 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: .33em 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#hijo-contenedor{
+    height: 450px;
+    left: 50%;
+
+    width: 510px;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+    text-align: center;
+    color: #3A6D9C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+}
+
+.calendar header {
+    position: relative;
+}
+
+.calendar h2 {
+    text-transform: uppercase;
+}
+
+.calendar thead {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.calendar tbody {
+    color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+    border: 2px solid #3A6D9C;
+}
+
+.calendar td {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+    color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+    border: 2px solid #cbd1d2;
+}
+
+.current-day {
+    background: #3A6D9C;
+    color: #f9f9f9;
+}
+
+.event {
+    cursor: pointer;
+    position: relative;
+}
+
+.event:after {
+    background: #3A6D9C;
+    border-radius: 50%;
+    bottom: .5em;
+    display: block;
+    content: '';
+    height: .5em;
+    left: 50%;
+    margin: -.25em 0 0 -.25em;
+    position: absolute;
+    width: .5em;
+}
+
+.event.current-day:after {
+    background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+    border: 2px solid #3A6D9C;
+    border-radius: 50%;
+    color: #cbd1d2;
+    height: 2em;
+    font-size: .75em;
+    line-height: 2em;
+    margin: -1em;
+    position: absolute;
+    top: 50%;
+    width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    background: #cbd1d2;
+    color: #f9f9f9;
+}
+
+.btn-prev {
+    left: 6em;
+}
+
+.btn-next {
+    right: 6em;
+}
+
+.contenedor-padre {
+    display: flex;
+
+}
+
+.beneficios-div {
+    display: flex;
+    margin: 20px;
+    margin-top: 10px;
+    margin-left: 26%;
+    cursor: pointer;
+}
+
+.img-beneficios {
+    margin: 10px;
+}
+
+#beneficios:hover {
+    box-shadow: 10px 10px 10px #B7C72C;
+}
+
+#integridad:hover {
+    box-shadow: 10px 10px 10px #3a6d9c;
+}
+
+#oportunidades:hover {
+    box-shadow: 10px 10px 10px #87689B;
+}
+
+
+#copyright {
+    color: black;
+}
+
+/* -----imagen */
+.contenedorPersonal {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    align-content: center;
+}
+
+.imagen-personal {
+    width: 6em;
+    border-radius: 4em;
+
+}
+
+/*--------*/
+.quienesSomos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenSomos {
+    height: 70%;
+}
+
+.textoNosotros {
+    margin: 10px;
+}
+
+.imagenCumple {
+    width: 5%;
+    height: 40px !important;
+    position: relative;
+    -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
+    animation: rotateAndShrink 3s linear infinite 2.5s;
+}
+
+@-webkit-keyframes rotateAndShrink {
+    0% {
+        width: 40px
     }
 
-    /* -----imagen */
-    .contenedorPersonal{
-        display: flex;
-        width: 20%;
-        flex-direction: row;
-        align-content: center;
+    5% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+        -webkit-transform-origin: bottom right;
+        transform-origin: bottom right;
+        width: 26px
     }
-  .imagen-personal{
-        width: 6em;
-        border-radius: 4em;
 
-  }
-    /*--------*/
-    .quienesSomos {
-        display: flex;
-        justify-content: space-around;
+    10% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: bottom right;
+        transform-origin: bottom right;
+        width: 40px
     }
-    .imagenSomos {
-        height:70%;
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        width: 40px
     }
-    .textoNosotros {
-        margin:10px;
+}
+
+/* REDISEÑANDO LOGO */
+.navbar-brand img {
+    height: 4rem;
+    padding-left: 3rem;
+}
+
+.navbar-nav {
+    margin-right: 3rem;
+}
+
+.navbar-nav li {
+    padding: 0 1rem;
+}
+
+.navbar-nav li {
+    padding: 0 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #3a6d9c !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #3a6d9c !important;
+}
+
+.fa-bars {
+    color: #3a6d9c !important;
+    font-size: 25px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+@media (max-width: 900px) {
+    #centria-nosotros {
+        width: 100%;
     }
-    .imagenCumple {
-        width: 5%;
-        height: 40px!important;
-        position: relative;
-        -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
-        animation: rotateAndShrink 3s linear infinite 2.5s;
+
+    #centria-usuarios {
+        width: 100%;
     }
-    @-webkit-keyframes rotateAndShrink {
-        0% {
-            width: 40px
-        }
-    
-        5% {
-            -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-            -webkit-transform-origin: bottom right;
-            transform-origin: bottom right;
-            width: 26px
-        }
-    
-        10% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            -webkit-transform-origin: bottom right;
-            transform-origin: bottom right;
-            width: 40px
-        }
-    
-        100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            width: 40px
-        }
+
+    #centria-portales {
+        width: 100%;
     }
-    
-    /* REDISEÑANDO LOGO */
-    .navbar-brand img{
-        height: 4rem;
-        padding-left: 3rem;
-      }
-      .navbar-nav{
-        margin-right: 3rem;
-      }
-      .navbar-nav li{
-        padding: 0 1rem;
-      }
-      .navbar-nav li {
-        padding: 0 1rem;
-      }
-      .navbar-nav .nav-item .nav-link{
-        color: #3a6d9c !important; 
-        font-weight: 600; 
-        float: right; 
-        text-align: left;}
-      .navbar-nav .nav-item .nav-link:hover{
-        color: #3a6d9c!important;
-      }
-      .fa-bars{
-        color: #3a6d9c !important; 
-        font-size: 25px !important;
-      }
-      .navbar-toggler{
-        outline: none !important;
-      }
-      
-      @media (max-width: 900px ) {
-        #centria-nosotros {
-           width: 100%;
-        }
-        #centria-usuarios{
-            width: 100%;
-        }
-        #centria-portales{
-            width: 100%;
-        }
-        #centria-salas{
-            width: 100%;
-        }
-        #centria-users{
-            width: 100%;
-        }
+
+    #centria-salas {
+        width: 100%;
     }
-    @media (min-width: 900px ) {
-        #centria-nosotros {
-           width: 100%;
-        }
-        #centria-usuarios{
-            width: 100%;
-        }
-        #centria-portales{
-            width: 100%;
-        }
-        #centria-salas{
-            width: 100%;
-        }
-        #centria-users{
-            width: 100%;
-        }
+
+    #centria-users {
+        width: 100%;
     }
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+}
+
+@media (min-width: 900px) {
+    #centria-nosotros {
+        width: 100%;
+    }
+
+    #centria-usuarios {
+        width: 100%;
+    }
+
+    #centria-portales {
+        width: 100%;
+    }
+
+    #centria-salas {
+        width: 100%;
+    }
+
+    #centria-users {
+        width: 100%;
+    }
+}
+.google-calendar{
+    margin:30px;
+}
