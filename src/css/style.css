@@ -266,9 +266,78 @@ ul{
 
   }
     /*--------*/
+    .quienesSomos {
+        display: flex;
+        justify-content: space-around;
+    }
+    .imagenSomos {
+        height:70%;
+    }
+    .textoNosotros {
+        margin:10px;
+    }
+    .imagenCumple {
+        width: 5%;
+        height: 40px!important;
+        position: relative;
+        -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
+        animation: rotateAndShrink 3s linear infinite 2.5s;
+    }
+    @-webkit-keyframes rotateAndShrink {
+        0% {
+            width: 40px
+        }
     
+        5% {
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+            width: 26px
+        }
     
+        10% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+            width: 40px
+        }
     
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            width: 40px
+        }
+    }
+    
+    @keyframes rotateAndShrink {
+        0% {
+            width: 40px
+        }
+    
+        5% {
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+            width: 26px
+        }
+    
+        10% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+            width: 40px
+        }
+    
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            width: 40px
+        }
+    }
     
     
     
