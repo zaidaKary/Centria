@@ -42,7 +42,7 @@ console.log(months[d.getMonth()]);
           <img  src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="centria rounded-circle z-depth-0"
             alt="avatar image" height="55">
             </a>
-            <p class="texto" id="cuenta-user">Erika@gmail.com</p>
+            <p class="texto" >Erika Gomez</p>
           </li>
           
         </ul>
@@ -82,102 +82,9 @@ console.log(months[d.getMonth()]);
   </div>
  
 </div>
-<div class="hijo-contenedor">
-<div class="container">
-
-		<div class="calendar">
-
-			<div>				
-
-				<h2>Noviembre</h2>
-
-		
-
-			</div>
-			
-			<table>
-			
-				<thead>
-					
-					<tr>
-						
-						<td>L</td>
-						<td>M</td>
-						<td>M</td>
-						<td>J</td>
-						<td>V</td>
-						<td>S</td>
-						<td>D</td>
-
-					</tr>
-
-				</thead>
-
-				<tbody>
-					
-					<tr>
-						<td class="prev-month">27</td>
-						<td class="prev-month">28</td>
-						<td class="prev-month">29</td>
-						<td class="prev-month">30</td>
-						<td class="prev-month">31</td>
-						<td class="prev-month">1</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
-						<td>8</td>
-						<td>9</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td class="event">11</td>
-						<td>12</td>
-						<td class="current-day event">13</td>
-						<td>14</td>
-						<td>15</td>
-						<td>16</td>
-					</tr>
-					<tr>
-						<td>17</td>
-						<td>18</td>
-						<td>19</td>
-						<td>20</td>
-						<td>21</td>
-						<td class="event">22</td>
-						<td>23</td>
-					</tr>
-
-					<tr>
-						<td >24</td>
-						<td>25</td>
-						<td>26</td>
-						<td>27</td>
-						<td>28</td>
-						<td>29</td>
-						<td>30</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td class="next-month">2</td>
-						<td class="next-month">3</td>
-						<td class="next-month">4</td>
-						<td class="next-month">5</td>
-						<td class="next-month">6</td>
-						<td class="next-month">7</td>
-					</tr>
-
-				</tbody>
-
-			</table>
-
-		</div> <!-- end calendar -->
-
-  </div> <!-- end container -->
+<div id="hijo-contenedor"class="google-calendar">
+<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLima&amp;src=Zm5ycmJyMnBqODg1OGtwN3RkazJrdm1ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23336699&amp;showTz=0&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+</div>
   </div> <!-- end contenedor-padre -->
   
   </div>
