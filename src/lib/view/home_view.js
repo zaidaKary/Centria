@@ -20,6 +20,14 @@ export default (data) => {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+        <div class="wrap">
+        <div class="search">
+        <input type="text" class="searchTerm" placeholder="Search">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+       </button>
+        </div>
+        </div>
           <li  id="centria-nosotros" class="nav-item">
           <a class="nav-link active" href="http://127.0.0.1:5500/src/index.html#/Nosotros"><img  class="centria" src="../src/imgs/C azul_Mesa de trabajo 1.png"></a>
           <p class="texto">Nosotros</p>
@@ -167,7 +175,7 @@ export default (data) => {
  const centriaSalas = divElem.querySelector('#centria-salas');
 
 
-  contenidoModal.innerHTML = `<label>${dia} ${(months[d.getMonth()])}</label>`;
+  contenidoModal.innerHTML = `<label class="mes">${dia} ${(months[d.getMonth()])}</label>`;
   data.forEach((element) => {
     //   console.log(element.Nombres);
     //   console.log(element.FechaNacimiento);
@@ -177,22 +185,21 @@ export default (data) => {
   const templateUsuario = () =>{
     const templateLista = divElem.querySelector('.hover');
     templateLista.innerHTML =`<ul class="submenu Nosotros">
-    <li><a href="" class="noDecoration">Portal de Desempeño</a></li>
-    <li><a href="" class="noDecoration">Portal de Colaboradores</a></li>
-    <li><a href="" class="noDecoration">Portal de Beneficios</a></li>
-    <li><a href="" class="noDecoration">RIT</a></li>
-    <li><a href="" class="noDecoration">RISST</a></li>
+    <li><a href="https://appevaluaciondesempenio.azurewebsites.net/" target="_blank" class="noDecoration">Portal de Desempeño</a></li>
+    <li><a href="https://appportalempleados.azurewebsites.net/" target="_blank" class="noDecoration">Portal de Colaboradores</a></li>
+    <li><a href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=0000000c-0000-0000-c000-000000000000&redirect_uri=https%3A%2F%2Faccount.activedirectory.windowsazure.com%2F&response_mode=form_post&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3D2JGgPvv4cyvf3ogWDWmC41bmVEOKk9KtvzclBWD4sF8UCo_Gn27iJjQomNBtzwGbUgtV7RpJ7q4PtkEH7hfaQP36QY54awcxfsWXm17MUUA50G0LtBlrTUqs2sGJZOLzlO7ENk5GZn_dRvf3Pe0Hv5-vdXOsfcfaM7N8SGjz8bsilWZH3da0eTey9Nx6P1ybrbtC16Q5K1OAX9mrbkduwUibhqfWoq_ewo1RmtvT4toG_YU1Rcs2wTa-OOfTGqB2V7fpSo634xvN_mRr-ZqI73oWtjH-5fHQGS9iEF9Ra6C-RDDNKgZSmDMiWMiApbVCa1KchkhA8_zUvx-vveNumDU2bXAuVuGFUXy-LKvgSotFna-lejgW-ap5KRHLiJH5&nonce=1573574107.QnzlxyaeHRH5glRjxiMMlQ&nux=1&sso_reload=true" target="_blank" class="noDecoration">Portal de Beneficios</a></li>
+    <li><a href="./RIT.pdf" target="_blank" class="noDecoration">RIT</a></li>
+    <li><a href="./RISST.pdf" target="_blank" class="noDecoration">RISST</a></li>
     </ul>`  
   
 }
 const templatePortales = () =>{
   const templateLista = divElem.querySelector('.hover');
   templateLista.innerHTML =`<ul class="submenu">
-  <li><a href="">Portal del Colaborador</a></li>
-  <li><a href="">Portal Atenea</a></li>
-  <li><a href="">Portal de Rendiciones</a></li>
-  <li><a href="">Mesa de Servicios</a></li>
-  <li><a href="">Portal de Seguimiento de Auditoria</a></li>
+  <li><a href="https://appportallegal.azurewebsites.net/main" target="_blank" class="noDecoration">Portal Atenea</a></li>
+  <li><a href="https://login.microsoftonline.com/3e0289c2-e351-4c79-998b-8167c83a06d3/oauth2/authorize?response_type=id_token&redirect_uri=https%3A%2F%2Fappsistemarendiciones.azurewebsites.net%2F.auth%2Flogin%2Faad%2Fcallback&client_id=1ef02fe7-72fb-4c9c-a8ed-fa2a0b954759&scope=openid+profile+email&response_mode=form_post&nonce=9db0cf4dd83b4a5aa838620f4293800f_20191112232945&state=redir%3D%252F" target="_blank" class="noDecoration">Portal de Rendiciones</a></li>
+  <li><a href="https://centriaprod.service-now.com/centria/" target="_blank" class="noDecoration">Mesa de Servicios</a></li>
+  <li><a href="http://192.168.26.34/TeamCentral/Login/LoginPage.aspx?ReturnUrl=%2fTeamcentral%2f" target="_blank" class="noDecoration">Portal de Seguimiento de Auditoria</a></li>
   </ul>`  
 
 }
@@ -207,10 +214,10 @@ hover.addEventListener('mouseover', () =>{
   const templateNosotros = () =>{
   const templateLista = divElem.querySelector('.hover');
   templateLista.innerHTML =`<ul class="submenu">
-  <li><a href="">Nosotros</a></li>
-  <li><a href="">Competencias</a></li>
-  <li><a href="">Pilares</a></li>
-  <li><a href="">Organigrama</a></li>
+  <li><a href="http://127.0.0.1:5500/src/index.html#/Nosotros" target="_blank" class="noDecoration">Nosotros</a></li>
+  <li><a href="http://127.0.0.1:5500/src/index.html#/Competencias" target="_blank" class="noDecoration">Competencias</a></li>
+  <li><a href="http://127.0.0.1:5500/src/index.html#/Pilares" target="_blank" class="noDecoration">Pilares</a></li>
+  <li><a href="./Organigrama (11.11.19).pdf" target="_blank" target="_blank" class="noDecoration">Organigrama</a></li>
   </ul>`  
 }
 
