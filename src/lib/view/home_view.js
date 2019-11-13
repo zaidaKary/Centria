@@ -119,7 +119,7 @@ console.log(months[d.getMonth()]);
               <img id ="oportunidades" class="img-beneficios" src="../src/imgs/Botón-Oportunidades-de-Desarrollo.jpg" >
               </div>
               
-              <div>
+              <div class="iconoRegalo">
               <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
               </div>
             </div>
