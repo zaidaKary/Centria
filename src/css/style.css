@@ -498,3 +498,56 @@ table {
     margin:30px;
 }
 }
+.imagenCumple {
+    background: #87689B;
+    border-radius: 19px;
+    width: 5%;
+    height: 40px!important;
+    position: relative;
+    -webkit-animation: rotateAndShrink 3s linear infinite 2.5s;
+    animation: rotateAndShrink 3s linear infinite 2.5s;
+}
+.facebook {
+    width: 2em;
+}
+.instagram {
+    width: 1.6em;
+}
+.linkelin {
+    width: 2.6em;
+}
+.redSocial {
+    text-align: center;
+}
+.tableNosotros {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6%;
+}
+.tdImagen {
+    padding-right: 11%;
+}
+.txtNosotros {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #E2A900;
+    padding-right: 3em;
+}
+.txtDescriptcion {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #3A6DAC;
+}
+.icono {
+   width: 23px;
+   margin-right: 8px;
+}
