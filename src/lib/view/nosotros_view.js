@@ -6,7 +6,7 @@ export default (data) => {
   <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-white ">
   
-    <a id ="logo-centria"class="navbar-brand" href="#">
+    <a id ="logo-centria"class="navbar-brand" href="#/Home">
           <img class="log flex1" src="../src/imgs/LOGO CENTRIA.png" alt="">
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,43 +44,88 @@ export default (data) => {
 
 </nav>
 </header>
+
 <body>
-<div class="quienesSomos">
-    <div>
-    <img  class="imagenSomos" src="./imgs/b1.jpg" alt="imagen quienes somos">
-    </div>
-    <div class="textoNosotros">
-    <h1>¿QUIENES SOMOS?</h1>
-    <label>Somos una empresa de servicios administrativos enfocada en identificar 
-    sinergias y generar eficianecias para las empresas del Grupo Breca.</label>
-    <h1>PROPÓSITO</h1>
-    <label>Crear soluciones para que las personas y negocios desarrollen todo su potencial.</label>
-    </div>
-</div>
-<div class="quienesSomos">
-    <div class="textoNosotros">
-    <h1>COMPETENCIAS-COLABORADOR</h1>
-    <label>Orientacion al logro</label>
-    <label>Foco en el cliente</label>
-    <label>Comunicación efectiva</label>
-    <label>Autonomía</label>
-    </div>
-    <div>
-    <img  class="imagenSomos" src="./imgs/b2.png" alt="imagen quienes somos">
-    </div>
-</div>
-<div class="quienesSomos">
-    <div class="textoNosotros">
-    <h1>COMPETENCIAS-COLABORADOR</h1>
-    <label>Orientacion al logro</label>
-    <label>Foco en el cliente</label>
-    <label>Comunicación efectiva</label>
-    <label>Autonomía</label>
-    </div>
-    <div>
-    <img  class="imagenSomos" src="./imgs/imagenNosotros.JPG" alt="imagen quienes somos">
-    </div>
-</div>
+
+<table class="tableNosotros">
+    <tbody>
+        <tr>
+            <td rowspan="4" class="tdImagen">
+            <img  class="imagenSomos" src="./imgs/b1.jpg" alt="imagen quienes somos">
+            </td>
+            <td class="txtNosotros"><h1>¿QUIENES SOMOS?</h1></td>
+        </tr>
+      <tr>
+        <td class="txtDescriptcion">
+        <div>
+        <label>Somos una empresa de servicios administrativos enfocada </br> 
+        en identificar sinergias y generar eficianecias para las </br> 
+        empresas del Grupo Breca 
+        </label></div></td>
+      </tr>
+      <tr>
+        <td class="txtNosotros"><h1>PROPÓSITO</h1></td>
+      </tr>
+      <tr>
+        <td class="txtDescriptcion"><label>Crear soluciones para que las personas y negocios desarrollen</br> 
+        todo su potencial.</label></td>
+      </tr>
+    </tbody>
+</table>
+
+<table class="tableNosotros">
+    <tbody>
+        <tr>
+            <td colspan="2" class="txtNosotros"><h1>COMPETENCIAS - COLABORADOR</h1></td>
+           <td rowspan="5" class="tdImagen">
+           <img  class="imagenSomos" src="./imgs/b2.png" alt="imagen quienes somos">
+           </td>
+        </tr>
+      <tr>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono2.png" alt="imagen"><label>Orientacion al logro</label></td>
+        <td></td>
+      </tr>
+      <tr>
+      <td></td>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono2.png" alt="imagen"><label>Foco en el cliente</label></td>
+      </tr>
+      <tr>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono2.png" alt="imagen"><label>Comunicación efectiva</label></td>
+        <td></td>
+      </tr>
+       <tr>
+       <td></td>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono2.png" alt="imagen"><label>Autonomía</label></td>
+      </tr>
+    </tbody>
+</table>
+
+<table class="tableNosotros">
+    <tbody>
+        <tr>
+          <td rowspan="5" class="tdImagen">
+          <img  class="imagenSomos" src="./imgs/b3-4.png" alt="imagen quienes somos">
+          </td>
+            <td colspan="2" class="txtNosotros"><h1>COMPETENCIAS - LIDER</h1></td>
+        </tr>
+      <tr>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono1.png" alt="imagen"><label>Orientacion al logro</label></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono1.png" alt="imagen"><label>Visión estratégica</label></td>
+      </tr>
+      <tr>
+        <td class="txtDescriptcion"><img class="icono" src="./imgs/icono1.png" alt="imagen"><label>Desarrollo de personas</label></td>
+        <td></td>
+      </tr>
+       <tr>
+        <td></td>
+         <td class="txtDescriptcion"><img class="icono" src="./imgs/icono1.png" alt="imagen"><label>Generador de relaciones</label></td>
+      </tr>
+    </tbody>
+</table>
 </body>`;
  
   divElem.innerHTML = viewNosotros;
