@@ -1,4 +1,3 @@
-import {itemPersona} from '../view/itemPersona.js';
 export default (data) => {
 	console.log(data);
   const divElem = document.createElement('div');
