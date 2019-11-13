@@ -3,24 +3,30 @@
     padding: 0%;
     margin: 0%;
 }
-.centria{
-    width: 70px;
-    height: 60px;
-  
-}
+
 #centria-nosotros{
  background:#3A6D9C;
+ display: flex;
+ flex-direction: column;
+ width: 140px;
 }
 #centria-usuarios{
     background:#87689B;
     display: flex;
     flex-direction: column;
+    width: 150px;
 }
 #centria-portales{
     background: #B7C72C;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
 }
 #centria-salas{
+    display: flex;
+    flex-direction: column;
     background:#5FACB8 ;
+    width: 150px;
 }
 #centria-users{
 background: #D68500;
@@ -35,10 +41,12 @@ ul{
 }
 .nav-link{
     align-self: center;
+    margin-top: 10px;
 }
 .log{
     width: 25%;
     height: 25%;
+    margin-left: 30px;
 }
 .padre{
     display: flex;
@@ -49,3 +57,247 @@ ul{
    display: flex;
   align-items: center;
 }
+#user-icon{
+    text-align-last: center;
+    
+}
+#cuenta-user{
+    margin-top: 20px;}
+
+
+    .centria{
+        display: block;
+    
+        background-color: rgba(255,255,255,.15);
+        width: 70px;
+        height: 60px;
+      
+        padding:10px;
+        -webkit-border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+        -webkit-transition:box-shadow .4s;
+    }
+    
+    p.texto{
+        font-size: 1.2em;
+        color:white;
+        text-align: center;
+        /* padding-top:10px;
+        opacity: .6;
+        -webkit-transition: padding-top .4s; */
+    }
+    
+    /* li.nav-item:hover{
+        height:250px;
+    }
+    
+    li.nav-item:hover p.texto{
+        padding-top: 30px;
+        opacity: 1;
+    } */
+    
+    li.nav-item:hover img.centria{
+        -webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+    }
+    .card{
+        margin-top: 30px;
+        margin-left: 40px;
+        height: 10px;
+    }
+    .noticias{
+       
+        width: 80px;
+        
+    }
+    .card-text{
+        color: black;
+    }
+    body {
+        background: #f9f9f9;
+        color: #0e171c;
+        font: 300 100%/1.5em 'Lato', sans-serif;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    h2 {
+        font-size: 2em;
+        line-height: 1.25em;
+        margin: .25em 0;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        line-height: 1em;
+        margin: .33em 0;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    .container {
+        height: 450px;
+        left: 50%;
+
+        width: 510px;
+    }
+    
+    /* ---------- CALENDAR ---------- */
+    
+    .calendar {
+        text-align: center;
+    }
+    
+    .calendar header {
+        position: relative;
+    }
+    
+    .calendar h2 {
+        text-transform: uppercase;
+    }
+    
+    .calendar thead {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .calendar tbody {
+        color: #7c8a95;
+    }
+    
+    .calendar tbody td:hover {
+        border: 2px solid #00addf;
+    }
+    
+    .calendar td {
+        border: 2px solid transparent;
+        border-radius: 50%;
+        display: inline-block;
+        height: 4em;
+        line-height: 4em;
+        text-align: center;
+        width: 4em;
+    }
+    
+    .calendar .prev-month,
+    .calendar .next-month {
+        color: #cbd1d2;
+    }
+    
+    .calendar .prev-month:hover,
+    .calendar .next-month:hover {
+        border: 2px solid #cbd1d2;
+    }
+    
+    .current-day {
+        background: #00addf;
+        color: #f9f9f9;
+    }
+    
+    .event {
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .event:after {
+        background: #00addf;
+        border-radius: 50%;
+        bottom: .5em;
+        display: block;
+        content: '';
+        height: .5em;
+        left: 50%;
+        margin: -.25em 0 0 -.25em;
+        position: absolute;
+        width: .5em;
+    }
+    
+    .event.current-day:after {
+        background: #f9f9f9;
+    }
+    
+    .btn-prev,
+    .btn-next {
+        border: 2px solid #00addf;
+        border-radius: 50%;
+        color: #cbd1d2;
+        height: 2em;
+        font-size: .75em;
+        line-height: 2em;
+        margin: -1em;
+        position: absolute;
+        top: 50%;
+        width: 2em;
+    }
+    
+    .btn-prev:hover,
+    .btn-next:hover {
+        background: #cbd1d2;
+        color: #f9f9f9;
+    }
+    
+    .btn-prev {
+        left: 6em;
+    }
+    
+    .btn-next {
+        right: 6em;
+    }
+    .contenedor-padre{
+        display: flex;
+     
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
