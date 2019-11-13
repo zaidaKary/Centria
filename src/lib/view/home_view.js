@@ -11,7 +11,7 @@ console.log(months[d.getMonth()]);
   <header>
   <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a id ="logo-centria" class="navbar-brand" href="#">
+      <a id ="logo-centria" class="navbar-brand" href="http://127.0.0.1:5500/src/index.html#/Home">
       <img  src="../src/imgs/LOGO CENTRIA.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -21,7 +21,7 @@ console.log(months[d.getMonth()]);
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li  id="centria-nosotros" class="nav-item">
-          <a class="nav-link active" href="#!"><img  class="centria" src="../src/imgs/C azul_Mesa de trabajo 1.png"></a>
+          <a class="nav-link active" href="http://127.0.0.1:5500/src/index.html#/Nosotros"><img  class="centria" src="../src/imgs/C azul_Mesa de trabajo 1.png"></a>
           <p class="texto">Nosotros</p>
                 </a>
           </li>
@@ -102,26 +102,18 @@ console.log(months[d.getMonth()]);
   <div>
   <a href="javascript:;" id="modal"><img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple"></a>
   </div>
-  <div class="contenedorPersonal">
- 
-  <div id="contenedorPersona">
-  </div>
 
 <footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
   <div  class="text-center py-3">
   <p id="copyright">Mantente conectado</p>
   </div>
-  <div class="social text-senter">
-  
+  <div class="social text-senter redSocial">
+  <a href="https://www.facebook.com/groups/680173985758480/"><img src="../src/imgs/facebook.png" alt="facebook" class="facebook"></a>
+  <a href="https://www.instagram.com/c3.0centria/"><img src="../src/imgs/instragram.png" alt="instagram" class="instagram"></a>
+  <a href="https://www.linkedin.com/company/centria---csc-grupo-breca/?viewAsMember=true"><img src="../src/imgs/linkelin.png" alt="instagram" class="linkelin"></a>
 </div>
   <div class="footer-copyright text-center py-3"><strong>©2019 CENTRIA - TODOS LOS DERECHOS RESERVADOS </strong>
- 
- 
   </div>
-  <!-- Copyright -->
-
 </footer>
 </body>`;
     divElem.innerHTML = viewHome;
