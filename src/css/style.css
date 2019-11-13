@@ -430,18 +430,19 @@ table {
     
 }
 .div-acceso-directo p {
-    color: black;
+    color: #3a6d9c;
     font-weight: 500;
+  
 }
 
 .cuadrado-ad{
   
- border:  5px solid #ffff;
  align-self: center;
+ text-align: center;
 
 }
 .cuadrado-ad img {
-    width: 70%;
+    width: 50%;
 }
 @media (max-width: 900px) {
     #centria-nosotros {
