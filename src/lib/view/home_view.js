@@ -172,7 +172,7 @@ export default (data) => {
   </div> <!-- end contenedor-padre -->
   </div>
   <div>
-  <img src="../src/imgs/cumpleanos.png" alt="icono cumpleaños" class="imagenCumple">
+<img src="../src/imgs/cumple.png" alt="icono cumpleaños" class="imagenCumple">
   </div>	
   <div id="contenedorPersona">
   </div>

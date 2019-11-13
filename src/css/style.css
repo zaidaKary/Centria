@@ -263,6 +263,8 @@ ul{
         margin:10px;
     }
     .imagenCumple {
+        background: #87689B;
+        border-radius: 19px;
         width: 5%;
         height: 40px!important;
         position: relative;
